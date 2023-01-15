@@ -6,7 +6,8 @@ int main(int argc, char *argv[])
 	int answer = 0;
 	printf("==MENU==\n1. Royal Cheese\n2. Mc Deluxe\n3. Mc Bacon\n4. Big Mac\n Votre choix?\n");
 	printf(">");
-	scanf("%d", &answer);
+	int *pointeur = &answer;
+	scanf("%d", pointeur);
 	switch(answer)
 	{
 	case 1:
